@@ -8,14 +8,38 @@
          <meta name="viewport" content="width=device-width, initial-scale=1" />
     
          <style type="text/css">
+             
              p {
                  font-family: Arial, Helvetica, sans-serif;
              }
+             
+             .bold {
+                 font-weight: bold;
+                 color: green;
+                 font-size: 200%;
+/*                  percentage is a relative font size */
+             }
+             
+             .italic {
+                 font-style: italic;
+                 font-size: 20px;
+/*                  pixels is an absolute font-size and default font-size is usuall 16px */
+             }
+             
+             .underline {
+                 text-decoration: underline;
+                 font-size: 2em;
+/*                  1em equals 16 pixels. Resizing text in browsers goes well using ems */
+             }
+             
         </style>
      
      </head>
 
      <body>
-        <p>This is some text.</p>   
+        <p>This is some text.</p>
+        <p class="bold">This is some bold text.</p>   
+        <p class="italic">This is some italic text.</p>
+        <p class="underline">This is some underlined text.</p>
      </body>
 </html>
