@@ -137,26 +137,26 @@
              .last-updated span {
                  font-weight: bold;
              }
+             .headline {
+                 float: left;
+             }
              .headline h1 {
                  color: #1F4F82;
-                 font-size: 2.5em;
+                 font-size: 1.8em;
              }
-             .headline img {
+             .feature-image {
                  float: left;
              }
-             .headline p {
-                 position: relative;
-                 left: 10px;
-                 top: -15px;
-                 width: 280px;
-                 float: left;
+             .feature-image__img {
+                 width: 380px;
              }
              .news-item {
-                 position: relative;
-                 left: 408px;
-                 top: -145px;
-                 width: 280px;
-                 font-size: 1.1em;
+                 float: left;
+                 width: 250px;;
+                 margin-left: 10px;
+             }
+             .news-item p {
+                 font-size: .8em;
              }
              .news-item__link {
                  color: #1F4F82;
@@ -164,6 +164,7 @@
                  line-height: 1.6em;
                  background-repeat: no-repeat;
                  background-position: left center;
+                 font-size: 1.1em;
              }
              .news-item__link:hover {
                  text-decoration: underline;
@@ -175,6 +176,22 @@
              .news-item__link--audio {
                  background-image: url("images/audio-icon.png");
                  padding-left: 25px;
+             }
+             .watch-list {
+                 background-color: #EEEEEE;
+                 float: right;
+                 width: 400px;
+                 position: relative;
+                 top: -120;
+             }
+             .watch-list h2 {
+                 color: #505050;
+                 margin: 10px 0 10px 10px;
+                 font-size: 1.8em;
+             }
+             .watch-list__image {
+                 float: right;
+                 margin: 25px 10px 0 0;
              }
          </style>
         
@@ -240,16 +257,22 @@
                  	</div>
                  	<div class="headline">
                      	<h1>Pollution to spread across England</h1>
-                     	<img src="images/content-image.png">
-                     	<p>Health warnings have been issued by the government as pollution spreading across England is forecast to hit high levels.</p>
-                    </div>
-
+                 	</div>
+                 	<div class="break"></div>
+                 	<div class="feature-image">
+                     	<img class="feature-image__img" src="images/content-image.png">
+                 	</div>
                  	<div class="news-item">
+                       <p>Health warnings have been issued by the government as pollution spreading across England is forecast to hit high levels.</p>
                  	   <p><a class="news-item__link news-item__link--video" href="#">Why are pollution levels so high?</a><br/>
                  	   <a class="news-item__link news-item__link--video" href="#">Saharan dust visible on cars</a><br/>
                  	   <a class="news-item__link news-item__link--video" href="#">How Saharan dust reached the UK</a><br/>
                  	   <a class="news-item__link" href="#">What will pollution do to us?</a><br/>
                  	   <a class="news-item__link news-item__link--audio"href="#">Air pollution a 'serious 'issue'</a></p>
+                 	</div>
+                 	<div class="watch-list">
+                     	<img class="watch-list__image" src="images/indicator.png">
+                     	<h2>Watch/Listen</h2>
                  	</div>
              	</div>
          	</div>
