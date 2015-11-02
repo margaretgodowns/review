@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Learning Javascript</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <style>
+        #red-circle {
+            height: 400px;
+            width: 400px;
+            border-radius: 100%;
+            background-color: red;
+        }
+    </style>
+    <body>
+        <div id="red-circle"></div>
+        <button id="hide-circle">Hide circle</button>
+        <script type="text/javascript">
+            document.getElementById("hide-circle").onclick = function() {
+                document.getElementById("red-circle").style.display = "none"; 
+            }
+        </script>
+    </body>
+</html>

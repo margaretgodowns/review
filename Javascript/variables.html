@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Learning Javascript</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <style>
+    </style>
+    <body>
+        <input id="my-input" type="text" value="test"/>
+        <button id="style-changer">Change the text</button>
+        <div id="first-div">This is some text</div>
+        <script type="text/javascript">
+            var newText = document.getElementById("my-input").value;
+            document.getElementById("style-changer").onclick=function() {
+                newText = document.getElementById("my-input").value;
+                document.getElementById("first-div").innerHTML = newText;
+            }
+        </script>
+    </body>
+</html>
