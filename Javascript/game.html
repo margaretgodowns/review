@@ -10,14 +10,19 @@
     </style>
     <body>
         <p>How many fingers?</p>
-        <input id="weather" type="text" />
+        <input id="answer" type="text" />
         <button id="my-button">Submit</button>
         
         <script type="text/javascript">
-            var x = Math.random();
-            x = 6*x;
-            x = Math.floor(x);
-            alert(x);
+            document.getElementById("my-button").onclick = function() {
+                var x = 6*Math.random();
+                x = Math.floor(x);
+                if (x == document.getElementById("answer").value) {
+                    alert("You guessed the number!");
+                } else {
+                    alert("Sorry you're wrong. The number was " + x);
+                }
+            }
         </script>
     </body>
 </html>
