@@ -1,2 +1,2 @@
-# teaching-html
-This is a simple outline for teaching someone the basics of HTML. Derived from Udemy's web development course.
+# review exercises
+Review exercises for HTML, CSS, Javascript, jQuery, PHP, Wordpress. Taken from Udemy tutorials by Rob Percival.
