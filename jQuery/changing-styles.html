@@ -9,8 +9,8 @@
          <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> 
          <style>
              .shape {
-                 width: 200px;
-                 height: 200px;
+                 width: 300px;
+                 height: 300px;
                  float: left;
                  margin: 10px;
              }
@@ -21,19 +21,19 @@
              
              .green-circle {
                  background-color: green;
-                 border-radius: 100px;
+                 border-radius: 150px;
              }
          </style>
      </head>
     
      <body>
-         <p>This is some text.</p>
+         <div class=" red shape"></div>
+         <div class=" red shape"></div>
          <div class="shape green-circle" id="shape-3"></div>
-         <iframe src="http://www.cnn.com"></iframe>
          <script>
              
              $(".green-circle").click(function() {
-                 $("iframe").attr("src", "http://ecowebhosting.co.uk"); 
+                 $(".red").fadeOut(); 
              });
              
          </script>
