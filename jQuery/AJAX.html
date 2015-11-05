@@ -8,29 +8,20 @@
          <meta name="viewport" content="width=device-width, initial-scale=1" />
          <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> 
          <style>
-             .green-circle {
-                 width: 200px;
-                 height: 200px;
-                 background-color: green;
-                 border-radius: 100px;
-             }
+             
          </style>
      </head>
      <body>
-         
-         <div class="green-circle"></div>        
+         <h1>Asynchronous Javascript and XML</h1>
+                 
          <script>
              
-             $(".green-circle").click(function() {
-                $(this).animate({
-                    width:"300px",
-                    height:"300px",
-                    borderRadius:"150px",
-                    marginLeft:"100px",
-                    marginTop:"100px"
-                    }, 800); 
-               });
-             
+             $.ajax({
+                 url:"test.html"
+             }).done(function(data) {
+                 $("h1").append(data);
+             })
+                          
          </script>
          
      </body>
