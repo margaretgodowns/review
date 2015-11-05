@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+     <head>
+         <title>Learning jQuery</title>
+        
+         <meta charset="utf-8" />
+         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+         <meta name="viewport" content="width=device-width, initial-scale=1" />
+         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> 
+         <style>
+             .green-circle {
+                 width: 200px;
+                 height: 200px;
+                 background-color: green;
+                 border-radius: 100px;
+             }
+         </style>
+     </head>
+     <body>
+         
+         <div class="green-circle"></div>        
+         <script>
+             
+             $(".green-circle").click(function() {
+                $(this).animate({
+                    width:"300px",
+                    height:"300px",
+                    borderRadius:"150px",
+                    marginLeft:"100px",
+                    marginTop:"100px"
+                    }, 800); 
+               });
+             
+         </script>
+         
+     </body>
+</html>
